@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="icon" href="favicon.png" type="image/png">
+  <title>VitalBeat</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+            <h1>VitalBeat</h1>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Services</a></li>
+        <!-- <li><a href="./dashboard.html">Dashboard</a></li> -->
+        <li><a href="#contact">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="section__container header__container" id="home">
+      <div class="header__content">
+        <h1>DON'T STOP TILL YOUR SUCCESS!</h1>
+        <h2>GET FIT TO HAPPY</h2>
+        <p>
+          Unlock your full potential with our expert training and
+          state-of-the-art facilities. Every step you take brings you closer
+          to a healthier, happier you. Let's make fitness a lifestyle!
+        </p>
+        <div class="header__btn">
+          <button class="btn" onclick="scrollToSection()">Explore More</button>
+          <script>
+            function scrollToSection() {
+                // Scroll to the element with id 'section2'
+                document.getElementById("about").scrollIntoView({behavior: "smooth"});
+            }
+        </script>
+        </div>
+      </div>
+      <div class="header__image">
+        <img src="assets/stock2.png" alt="header" />
+      </div>
+    </div>
+  </header>
+
+  <div class="about" id="about">
+    <div class="section__container about__container">
+      <div class="about__image">
+        <img src="assets/stock3.png" alt="about"/>
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">Ready To Make A Change?</h2>
+        <p>
+          Taking the first step towards a healthier, stronger you can be the
+          most challenging part of the journey, but it's also the most
+          rewarding. Whether you're a beginner or a seasoned athlete, our
+          personalized training programs are designed to help you reach your
+          goals faster and more efficiently.
+        </p>
+        <p>
+          With our motivating trainers, energizing classes, and
+          state-of-the-art equipment, you'll have everything you need to stay
+          committed and see real results.
+        </p>
+        <div class="about__btn">
+          <button class="btn" onclick="window.open('./dashboard.html')">Go to Dashboard</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="service" id="service">
+    <div class="section__container service__container">
+      <h2 class="section__header">Services We Provide</h2>
+      <div class="service__grid">
+        <div class="service__card">
+          <span>01</span>
+          <h4>Weight Tracking</h4>
+          <p>
+            Our fitness training programs are tailored to help you build
+            strength, improve endurance, and achieve your personal fitness
+            goals.
+          </p>
+        </div>
+        <div class="service__card">
+          <span>02</span>
+          <h4>Steps Tracking</h4>
+          <p>
+            Perfect for all levels, our sessions focus on improving
+            flexibility, balance, and mental clarity while helping you manage
+            stress.
+          </p>
+        </div>
+        <div class="service__card">
+          <span>03</span>
+          <h4>Sleep Monitoring</h4>
+          <p>
+            Our gymnastics classes are designed to boost coordination,
+            flexibility, and core strength through a series of fun and
+            challenging exercises.
+          </p>
+        </div>
+        <div class="service__card">
+          <span>04</span>
+          <h4>Calories Burnt</h4>
+          <p>
+            Suitable for all ages and skill levels, our martial arts program
+            emphasizes technique, respect, and personal growth while building
+            confidence.
+          </p>
+        </div>
+        <div class="service__image">
+          <img src="assets/stock1.png" alt="service" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="footer">
+    <div class="footer__bar">
+      Copyright © 2024 Dona Dutta. All rights reserved.
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
